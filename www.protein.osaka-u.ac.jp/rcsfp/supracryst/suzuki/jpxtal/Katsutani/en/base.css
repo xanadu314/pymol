@@ -1,0 +1,407 @@
+@charset "Shift_JIS";
+
+/* 一括で全ての要素の余白をゼロに指定 */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a:link {
+  color: #0000ff;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #990099;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #ff0000;
+  text-decoration: underline;
+}
+
+/* ---------------------------------------- フォントスタイル フォントサイズ */
+body {
+  font-size: 0.85em;
+  text-align: center;
+  font-family: "Hiragino Kaku Gothic Pro", "Hiragino Kaku Gothic Pro", "Meiryo", "arial", "MS PGothic", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* ---------------------------------------- レイアウトに関する指定 */
+
+#wrapper {
+ background-color: #ffffff;
+  text-align: left;
+  margin: 0em auto 0;
+  width: 800px;
+}
+
+#header {
+ background-image: url("../figure/header.png");
+  padding: 0px 30px 10px;
+  height: 180px;
+}
+
+#contents {
+  float: right;
+  width: 540px;
+  padding: 2em 30px 4em 30px;
+}
+
+#sidebar {
+  float: left;
+  width: 180px;
+  padding: 2em 10px;
+}
+
+#footer {
+ background-image: url("../figure/footer.png");
+ height: 80px;
+  clear: both;
+  padding: 0.5em 0 1em;
+}
+
+
+body {
+ background-image: url("../figure/texture.png"); 
+}
+
+/* page-top */
+#page-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	font-size: 77%;
+}
+
+/* ---------------------------------------- プルダウンメニュー */
+/* メインメニュー */
+#menu ul {
+   display:block;
+   list-style-type: none;
+   margin:0;
+   padding:0;
+}
+
+/* サブメニュー1段目 */
+#menu ul ul{
+   display:none;
+   position:absolute;
+   top:100%;
+   left:0;
+}
+
+/* サブメニュー2段目以降 */
+#menu ul ul ul {
+   top:0;
+   left:100%;
+}
+
+/* リスト */
+#menu li {
+   float:left;
+}
+
+#menu li li {
+   clear:both;
+}
+
+#menu li:hover {
+   position:relative;
+}
+
+#menu li:hover > ul {
+   display: block
+}
+
+/* デザイン */
+#menu li {
+   line-height:1.6em;
+   text-align: center;
+   list-style-type: none;
+   width: 160px;
+   height: 20px;
+   padding: 0;
+   background: #B0C4DE;
+}
+
+#menu li li {
+   height:100%;
+   text-align: left;
+   overflow: hidden;
+   border-top: 1px solid #ffffff;
+}
+
+#menu li a{
+   font-size: 12px;
+   display: block;
+   width:100%;
+   text-decoration:none;
+   color:#333;
+   padding:2px 5px;
+}
+
+#menu li:hover {
+   background:#FFFFFF;
+   color:#333;
+}
+
+#menu .column1, #menu .column2, #menu .column3 {
+   color:#333;
+   background:#7BBA10;
+}
+
+/* ---------------------------------------- #header内の指定 */
+
+/* -- 見出しレベル1 -- */
+h1 {
+  text-align: right;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+/* -- 企業名 ショップ名 サイト名 -- */
+.logo {
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #0000FF;
+}
+
+.logo a:hover {
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #ff0000;
+}
+
+/* -- 概要 -- */
+.description { }
+
+/* ---------------------------------------- #contents内の指定 */
+
+/* -- 見出し -- */
+h2,h3,h4,h5,h6 {
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+  padding: 5px 0 5px 12px;
+  border-bottom:1px solid #999999;
+  border-left:10px solid #1E90FF;
+  background:#f0f8ff; 
+  line-height:150%;
+}
+
+h3,h4,h5,h6 { margin-top: 2.5em; }
+
+/* -- 文字 -- */
+#contents p {
+  line-height: 1.6em;
+  margin-bottom: 0.5em;
+}
+
+/* -- パン屑リスト -- */
+#contents .topic-path {
+  line-height: 1em;
+  margin-bottom: 2em;
+}
+
+/* -- 以下 リスト関係 -- */
+#contents dl { margin: 1em 0; }
+
+#contents dt {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  border-bottom: 1px dotted #666666;
+}
+
+#contents dd { margin-bottom: 2em; }
+
+#contents ul { margin: 1em 0 1em 20px; }
+#contents ol { margin: 1em 0 1em 30px; }
+#contents li { margin-bottom: 0.5em; }
+
+
+/* -- 追加-- */
+body { line-height:160% }
+
+p { line-height:160% }
+
+p.infobox {
+   height: 10em;
+   overflow: auto;
+   border: red 1px dashed;
+}
+
+
+
+/* ---------------------------------------- #分数 */
+table.BunsuTbl{        /* 分数を左詰で表示する定義 */
+    margin-left:0;
+    margin-right:auto;
+}
+.BnsArea{
+    text-align:left;
+    margin-left:10px;
+}
+.Bunsu,.Seisu,.Bunshi,.Bunbo{    /* 分数、整数、分子、分母 */
+    font-size:15px;
+    color:#123d12;
+    text-align:center;
+    line-height:20px;
+    padding:2px 5px 2px 5px;
+}
+.Bunsu,.Seisu{    /* 分数、整数 */
+    margin:0;
+    display:inline-block;
+}
+.Seisu{        /* 整数 */
+    padding-top:0px;
+    vertical-align:middle;
+}
+.Atai{        /* 値 */
+    color:red;
+}
+.Bunshi {    /* 分子 */
+    border-style:solid;
+    border-width:0px 0px 1px 0px;
+    padding-bottom:0px;
+}
+span.super{    /* 指数 */
+    font-size:12px;
+    background-color:#ffccff;
+    vertical-align:super;
+    padding-left:5px;
+    padding-right:5px;
+}
+span.sub{    /* 添え字 */
+    color:#008080;
+    font-size:12px;
+    /*background-color:#00ffff;*/
+    vertical-align:sub;
+    padding-left:5px;
+    padding-right:5px;
+}
+
+
+/* ---------------------------------------- #サイトマップ */
+/* --- サイトマップエリア --- */
+ul.sitemap {
+width: 100%; /* サイトマップエリアの幅 */
+margin: 0;
+padding: 0;
+font-weight: bold; /* 一旦全ての文字を太字にする */
+list-style-type: none;
+}
+
+/* --- 入れ子にされたリスト用 --- */
+ul.sitemap ul {
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+/* --- 全てのリスト項目 --- */
+ul.sitemap li {
+padding: 1px 0 0 10px; /* 1階層目のパディング（上右下左） */
+background: url(figure/v_line1.html) no-repeat left top; /* 1階層目の背景 */
+line-height: 120%;
+}
+
+/* --- 2階層目のコンテナ --- */
+ul.sitemap div.contentNav {
+width: 100%; /* コンテナの幅 */
+margin-top: 20px; /* コンテナの上マージン */
+}
+
+/* --- セクション（2階層目のリストエリア） --- */
+ul.sitemap ul.section {
+width: 45%; /* セクションの幅 */
+float: left;
+}
+ul.sitemap ul.separator {
+background: url(v_separator.html) repeat-y right top; /* セクション間の垂直区切り線 */
+}
+
+/* --- 2階層目以降のリスト項目 --- */
+ul.sitemap ul.section li {
+margin: 0 10px 10px 0; /* 2階層目のマージン（上右下左） */
+padding: 1px 0 10px 15px; /* 2階層目のパディング（上右下左）上書き */
+background: url(figure/v_line2.html) no-repeat 5px 0; /* 2階層目の背景 上書き */
+}
+
+/* --- 3階層目以降のリストエリア --- */
+ul.sitemap ul.section ul {
+margin: 7px 0 0 8px; /* 3階層目以降のマージン（上右下左） */
+font-weight: normal; /* 3階層目以降の文字をノーマルの太さに戻す */
+}
+
+/* --- 3階層目以降のリスト項目 --- */
+ul.sitemap ul.section ul li {
+margin: 0 0 6px 0; /* 3階層目以降のマージン（上右下左）上書き */
+padding: 0 0 0 12px; /* 3階層目のパディング（上右下左）上書き */
+background: url(figure/triangle7.html) no-repeat 0 0.2em; /* 3階層目の背景 上書き */
+border-bottom: none; /* 3階層目以降の下境界線 上書き */
+}
+
+/* --- 4階層目以降のリスト項目 --- */
+ul.sitemap ul.section ul li li {
+padding: 0 0 0 9px; /* 4階層目以降のパディング（上右下左）上書き */
+background: url(square.html) no-repeat 0 0.4em; /* 4階層目以降の背景 上書き */
+}
+
+/* --- clearfix --- */
+.clearFix:after {
+content: ".";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+}
+.clearFix {
+min-height: 1px;
+}
+
+
+/* ---------------------------------------- #sidebar内の指定 */
+
+/* -- カテゴリタイトル -- */
+.sidetitle {
+  padding: 0.5em 0;
+  border-bottom: 1px solid #666666;
+}
+
+/* -- リスト -- */
+.localnavi {
+  list-style-type: none;
+  margin-bottom: 2em;
+}
+
+.localnavi li { display: inline; }
+
+.localnavi a {
+  text-decoration: none;
+  display: block;
+  width: 170px;
+  padding: 0.5em 5px;
+  background-color: #eeeeee;
+  color: #000000;
+  border-bottom: 1px solid #cccccc;
+}
+
+.localnavi a:hover {
+  text-decoration: none;
+  background-color: #999999;
+  color: #000000;
+  border-bottom: 1px solid #ff0000;
+}
+
+/* ---------------------------------------- #footer内の指定 */
+#footer p { text-align: center; }
+
+/* 以下 CSSデザインサンプルクレジット部分 */
+#cds{ display: none; }

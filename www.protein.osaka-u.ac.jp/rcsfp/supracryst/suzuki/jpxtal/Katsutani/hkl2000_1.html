@@ -1,0 +1,324 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+
+<!-- Mirrored from www.protein.osaka-u.ac.jp/rcsfp/supracryst/suzuki/jpxtal/Katsutani/hkl2000_1.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 May 2019 12:25:47 GMT -->
+<head>
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta name="Description" content="">
+<meta name="Keywords" conttent="HKL2000,使い方,X線結晶構造解析,タンパク質">
+<title>おうちでできる構造解析 番外編 HKL2000 概要</title>
+<link rel="stylesheet" href="base.css" type="text/css" media="screen,tv">
+<style type="text/css">
+<!--
+ol > li { font-weight: bold; }
+-->
+</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../../../../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-19185307-3', 'osaka-u.ac.jp');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+
+<!--サイト内検索-->
+<div Align="right">
+<table align="center" width="300px">
+<tr><td>
+<script>
+  (function() {
+    var cx = '008093356243681860448:tnfjmrmsoeu';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</td></tr>
+</table>
+</div>
+
+<!-- 見出し -->
+<h1>HKL2000の使い方、タンパク質のX線結晶構造解析</h1>
+<!-- タイトル -->
+<p class="logo"><a href="index-2.html">Windowsで行こう</a></p>
+<!-- 概要 -->
+<p class="description">構造生物学に関する備忘録</p>
+</div><!-- / header end -->
+<!-- ↓プルダウンメニュー↓ -->
+<div id="menu">
+   <ul>
+      <li>PyMOL
+    <ul>
+		<li><a href="install.html">インストール</a></li>
+		<li><a href="operation.html">基本操作</a></li>
+		<li><a href="command.html">コマンドの基本</a></li>
+		<li><a href="figure.html">作図に役立つコマンド+α</a></li>
+		<li><a href="potential.html">静電ポテンシャルの表示</a></li>
+		<li><a href="hydrophobicity.html">疎水性度の表示</a></li>
+		<li><a href="consurf.html">保存度による色分け</a></li>
+		<li><a href="stereo.html">3DCGプリント</a></li>
+		<li><a href="label.html">ラベル</a></li>
+		<li><a href="rmsd.html">分子の重ね合わせ</a></li>
+		<li><a href="hydrogenbond.html">水素結合</a></li>
+		<li><a href="distance.html">距離の測り方</a></li>
+		<li><a href="camera.html">カメラ方位</a></li>
+		<li><a href="preset.html">リガンド結合部位の表示</a></li>
+		<li><a href="map.html">電子密度マップ mesh</a></li>
+		<li><a href="map2.html">電子密度マップ volume</a></li>
+		<li><a href="map3.html">電子密度マップ FFT</a></li>
+		<li><a href="ball%26stick.html">ボール&スティックモデル</a></li>
+		<li><a href="cavity.html">cavityの表示</a></li>
+		<li><a href="pocket.html">pocketの表示</a></li>
+		<li><a href="interface.html">相互作用部位の表示</a></li>
+		<li><a href="movie1.html">動画の作り方 GUI編</a></li>
+		<li><a href="movie2.html">動画の作り方 コマンド編</a></li>
+		<li><a href="dssp.html">二次構造の割り当て（DSSP）</a></li>
+		<li><a href="transparency.html">透明</a></li>
+		<li><a href="bfactor.html">温度因子</a></li>
+		<li><a href="mutation.html">点変異の導入</a></li>
+    </ul>
+  </li>
+  
+  <li>CCP4mg
+    <ul>
+		<li><a href="ccp4mg_install.html">インストール</a></li>
+		<li><a href="ccp4mg_movie.html">動画</a></li>
+    </ul>
+  </li>
+  
+  <li>3Dプリンター
+    <ul>
+		<li><a href="3dprinter_cube.html">構造生物学と3Dプリンター</a></li>
+		<li><a href="3dprinter_software.html">ソフトウェア</a></li>
+		<li><a href="3dprinter_gallery.html">ダウンロード</a></li>
+		<li><a href="3dprinter_surface.html">surfaceモデル</a></li>
+		<li><a href="3dprinter_warm.html">ワームモデル</a></li>
+		<li><a href="3dprinter_ribbon.html">リボンモデル</a></li>
+		<li><a href="3dprinter_size.html">サイズの変更 netfabb</a></li>
+    </ul>
+  </li>
+  
+  <li>おうちでできる構造解析
+    <ul>
+		<li><a href="o01_abstract.html">概要</a></li>
+		<li><a href="o02_install.html">インストール & 準備</a></li>
+		<li><a href="o03_imosflm.html">iMosflm</a></li>
+		<li><a href="o04_scala.html">SCALA</a></li>
+		<li><a href="o05_matthews.html">Matthews係数</a></li>
+		<li><a href="o06_model.html">分子置換モデル</a></li>
+		<li><a href="o07_molrep.html">分子置換（メニューのみ）</a></li>
+		<li><a href="o08_refmac.html">精密化（メニューのみ）</a></li>
+		<li><a href="o09_arpwarp.html">自動構造構築（メニューのみ）</a></li>
+		<li><a href="hkl2000_1.html">HKL2000 概要</a></li>
+		<li><a href="hkl2000_2.html">HKL2000</a></li>
+		<li><a href="hkl2000_3.html">HKL2000 scalepack2mtz</a></li>
+		<li><a href="hkl2000_4.html">空間群の決定</a></li>
+		<li><a href="hkl2000_5.html">HKL2000 ログを読む</a></li>
+    </ul>
+  </li>
+  
+  <li>その他
+    <ul>
+		<li><a href="consurf2.html">保存度による色分け<br>(chimera編)</a></li>
+		<li><a href="align.html">Excelでまとめる<br>アライメント</a></li>
+		<li><a href="template.html">PowerPoint<br>オリジナルテンプレート</a></li>
+		<li><a href="gif.html">アニメーションGIFの作り方<br>giam編</a></li>
+		<li><a href="gif1.html">アニメーションGIFの作り方<br>ImageMagick編</a></li>
+		<li><a href="registration.html">初めてのPDB登録</a></li>
+    </ul>
+  </li>
+  
+</ul>
+</div><!-- ↑プルダウンメニュー↑ -->
+
+<div id="contents">
+<!-- パン屑リスト -->
+<p class="topic-path"><a href="index-2.html">Home</a> &gt; おうちでできる構造解析 &gt; 番外編～HKL2000 概要～</p>
+
+
+
+<!-- コンテンツ ここから -->
+-おうちでできる構造解析 番外編-<br>
+ 概要 →
+ <a href="hkl2000_2.html">HKL2000</a> →
+ <a href="hkl2000_3.html">scalepack2mtz</a> →
+ <a href="hkl2000_4.html">空間群の決定</a> →
+ <a href="hkl2000_5.html">ログを読む</a>
+<br><br>
+HKL2000はWindowsで使えないうえに200万円ぐらいするソフトなのでおうちではできませんが、
+番外編ということでまとめてみます。私自身分かっていない部分も多いので参考までにどうぞ。<br>
+<br>
+
+
+<h2>HKL2000</h2>
+HKL2000はDENZO、SCALEPACK、XDISPから構成されるプログラムパッケージです。
+<ul>
+<li>DENZO</li>
+回折イメージを反射ファイルに変換する積分プログラム
+<br><br>
+
+<li>SCALEPACK</li>
+反射ファイルを.scaファイルに変換するスケーリングプログラム
+<br><br>
+
+<li>XDSP</li>
+回折イメージの表示プログラム
+</ul>
+<br><br><br>
+
+<h2>概要</h2>
+解析の流れは以下のようになります。DENZOで回折イメージを反射ファイル（.xファイル）にして、
+SCALEPACKでスケーリングを行い.scaファイルを生成します。その後、.scaファイルをCCP4内のscalepack2mtzを用いて
+.mtzファイルに変換します。<br>
+<img src="figure/hkl2000_1_1.png" width="400">
+
+<br><br>
+<div align="center">
+<img src="figure/back.gif" border="0">
+<a href="hkl2000_2.html"><img src="figure/next.gif" border="0"></a>
+</div>
+
+<!--コンテンツ ここまで -->
+
+</div><!-- / contents end -->
+
+<div id="sidebar">
+<!-- サイドバー ここから -->
+<p class="sidetitle">PyMOL</p>
+<ul class="localnavi">
+  <li><a href="install.html">インストール</a></li>
+  <li><a href="operation.html">基本操作</a></li>
+  <li><a href="command.html">コマンドの基本</a></li>
+  <li><a href="figure.html">作図に役立つコマンド+α</a></li>
+  <li><a href="potential.html">静電ポテンシャルの表示</a></li>
+  <li><a href="hydrophobicity.html">疎水性度の表示</a></li>
+  <li><a href="consurf.html">保存度による色分け</a></li>
+  <li><a href="stereo.html">3DCGプリント</a></li>
+  <li><a href="label.html">ラベル</a></li>
+  <li><a href="rmsd.html">分子の重ね合わせ</a></li>
+  <li><a href="hydrogenbond.html">水素結合</a></li>
+  <li><a href="distance.html">距離の測り方</a></li>
+  <li><a href="camera.html">カメラ方位</a></li>
+  <li><a href="preset.html">リガンド結合部位の表示</a></li>
+  <li><a href="map.html">電子密度マップ mesh</a></li>
+  <li><a href="map2.html">電子密度マップ volume</a></li>
+  <li><a href="map3.html">電子密度マップ FFT</a></li>
+  <li><a href="ball%26stick.html">ボール&スティックモデル</a></li>
+  <li><a href="cavity.html">cavityの表示</a></li>
+  <li><a href="pocket.html">pocketの表示</a></li>
+  <li><a href="interface.html">相互作用部位の表示</a></li>
+  <li><a href="movie1.html">動画の作り方 GUI編</a></li>
+  <li><a href="movie2.html">動画の作り方 コマンド編</a></li>
+  <li><a href="dssp.html">二次構造の割り当て（DSSP）</a></li>
+  <li><a href="transparency.html">透明</a></li>
+  <li><a href="bfactor.html">温度因子</a></li>
+  <li><a href="mutation.html">点変異の導入</a></li>
+</ul>
+
+<p class="sidetitle">CCP4mg</p>
+<ul class="localnavi">
+  <li><a href="ccp4mg_install.html">インストール</a></li>
+  <li><a href="ccp4mg_movie.html">動画</a></li>
+</ul>
+
+<p class="sidetitle">3Dプリンター</p>
+<ul class="localnavi">
+  <li><a href="3dprinter_cube.html">構造生物学と<br> 3Dプリンター</a></li>
+  <li><a href="3dprinter_software.html">ソフトウェア</a></li>
+  <li><a href="3dprinter_gallery.html">ダウンロード</a></li>
+  <li><a href="3dprinter_surface.html">surfaceモデル</a></li>
+  <li><a href="3dprinter_warm.html">ワームモデル</a></li>
+  <li><a href="3dprinter_ribbon.html">リボンモデル</a></li>
+  <li><a href="3dprinter_size.html">サイズの変更 netfabb</a></li>
+</ul>
+
+
+<p class="sidetitle">おうちでできる構造解析</p>
+<ul class="localnavi">
+  <li><a href="o01_abstract.html">概要</a></li>
+  <li><a href="o02_install.html">インストール & 準備</a></li>
+  <li><a href="o03_imosflm.html">iMosflm</a></li>
+  <li><a href="o04_scala.html">SCALA</a></li>
+  <li><a href="o05_matthews.html">Matthews係数</a></li>
+  <li><a href="o06_model.html">分子置換モデル</a></li>
+  <li><a href="hkl2000_1.html">HKL2000 概要</a></li>
+  <li><a href="hkl2000_2.html">HKL2000</a></li>
+  <li><a href="hkl2000_3.html">HKL2000 scalepack2mtz</a></li>
+  <li><a href="hkl2000_4.html">空間群の決定</a></li>
+  <li><a href="hkl2000_5.html">HKL2000 ログを読む</a></li>
+</ul>
+
+<p class="sidetitle">その他</p>
+<ul class="localnavi">
+  <li><a href="consurf2.html">保存度による色分け<br>(chimera編)</a></li>
+  <li><a href="align.html">Excelでまとめる<br>アライメント</a></li>
+  <li><a href="template.html">PowerPoint<br>オリジナルテンプレート</a></li>
+  <li><a href="gif.html">アニメーションGIFの<br>作り方 giam編</a></li>
+  <li><a href="gif1.html">アニメーションGIFの<br>作り方 ImageMagick編</a></li>
+  <li><a href="registration.html">初めてのPDB登録</a></li>
+</ul>
+
+<div align="center"><a href="jpxtal.html"><img src="figure/jpxtal.png" border="0"></a></div><br>
+<div align="center"><a href="mail.html"><img src="figure/mail.png" border="0"></a></div>
+<br>
+
+
+<ul style="list-style:none;">
+<li><!-- Twitter -->
+<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</li>
+
+<li><!-- facebook いいね -->
+<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.protein.osaka-u.ac.jp%2Frcsfp%2Fsupracryst%2Fsuzuki%2Fjpxtal%2FKatsutani%2F&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe>
+</li>
+
+<li><!-- Google +1 -->
+<div class="g-plusone" data-size="medium" data-annotation="inline" data-width="300"></div>
+
+<script type="text/javascript">
+  window.___gcfg = {lang: 'ja'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = '../../../../../../apis.google.com/js/platform.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+</li>
+
+<li><!-- はてなブックマーク -->
+<a href="http://b.hatena.ne.jp/entry/http://www.protein.osaka-u.ac.jp/rcsfp/supracryst/suzuki/jpxtal/Katsutani/" class="hatena-bookmark-button" data-hatena-bookmark-title="Windowsで行こう" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="../../../../../../b.st-hatena.com/images/entry-button/button-only%402x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="../../../../../../b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+</li>
+</ul><!-- サイドバー ここまで -->
+</div><!-- / sidebar end -->
+<div id="footer">
+<div align="right">
+<a href="#header"><img src="figure/page_top.gif"></a>
+</div><br>
+
+<div Align="center">
+| <a href="index-2.html">Home</a> |<a href="http://www.protein.osaka-u.ac.jp/rcsfp/supracryst/suzuki/" target="_blank">鈴木守ユニット</a> | <a href="http://www.protein.osaka-u.ac.jp/rcsfp/supracryst/suzuki/jpxtal/" target="_blank">JPXTAL - 大阪大学 蛋白質研究所</a> |
+</div>
+
+<p id="page-top"><a href="#header">PAGE TOP</a></p>
+</div><!-- / footer end -->
+</div><!-- / wrapper end -->
+</body>
+
+<!-- Mirrored from www.protein.osaka-u.ac.jp/rcsfp/supracryst/suzuki/jpxtal/Katsutani/hkl2000_1.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 May 2019 12:25:48 GMT -->
+</html>

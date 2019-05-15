@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+
+<!-- Mirrored from www.protein.osaka-u.ac.jp/rcsfp/supracryst/suzuki/jpxtal/Katsutani/en/consurf.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 May 2019 12:31:55 GMT -->
+<head>
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta name="Description" content="">
+<meta name="Keywords" content="PyMOL,tutorial,protein,structural biology,x-ray crystallography">
+<title>PyMOL tutorial -Conservation-</title>
+<link rel="stylesheet" href="base.css" type="text/css" media="screen,tv">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../../../../../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-19185307-3', 'osaka-u.ac.jp');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+
+<div Align="right">
+<a href="../index-2.html">Japanese</a>
+</div>
+
+<!-- 見出し -->
+<h1>PyMOL tutorial | color by conservation</h1>
+<!-- タイトル -->
+<p class="logo"><a href="index.html">PyMOL tutorial</a></p>
+<!-- 概要 -->
+<p class="description">English version of Japanese website about structural biology</p>
+</div>
+<!-- / header end -->
+<div id="contents">
+<!-- パン屑リスト -->
+<p class="topic-path"><a href="index.html">Home</a> &gt; PyMOL &gt; Conservation</p>
+
+
+
+<!-- コンテンツ ここから -->
+<h2>Multi sequence aligment file</h2>
+<ol>
+<li>Upload FASTA file</li>
+Access <a href="http://www.genome.jp/tools/clustalw/" target="_blank">CLUSTALW</a>, and upload or enter FASTA file.
+<img src="../figure/consurf1.png" width="500">
+I uploaded five T1 type RNase T1/Po1/He1/Ms/F1, and color-code T1 (PDB ID:2B4U).<br>
+<a href="../rnase_align.fasta" target="_blank">Example of FASTA file</a>
+<br><br>
+
+<li>Click "Execute Multiple Aligment"</li>
+<br>
+
+<li>Save "clustalw.aln"</li>
+<img src="../figure/consurf2.png" width="500">
+<a href="../rnase.aln" target="_blank">Example of aligment file</a>
+<br><br><br>
+</ol>
+
+
+
+<h2>The ConSurf Server</h2>
+Access<a href="http://consurf.tau.ac.il/" target="_blank">The ConSurf Server</a>
+<ol>
+<li>Analyze Nucleotides or Amino Acids?</li>
+→Amino-Acids
+<br><br>
+
+<li>Is there a known protein structure?</li>
+→YRS<br>
+→Enter PDB ID or upload PDB file
+<br><br>
+
+Click "next"
+<img src="../figure/consurf3.png" width="500">
+<br><br><br>
+
+<li>Do you have a Multiple Sequence Aligment(MSA) to upload?</li>
+→Upload aligment file(***.aln)<br>
+→Enter sequence name corresponding PDB file at "Indicate the Query Sequence Name"
+(PDB ID:2BU4 is corresonds to sequence name T1. So I type T1.)
+<br><br>
+
+<li>Do you have a tree file to upload?</li>
+→No
+<br><br>
+
+<li>Enter Job title and your E-Mail adress, and click "submit"</li>
+<img src="../figure/consurf4.png" width="500">
+<br><br>
+
+<li>When the calculation is finished, click "Follow the instructions to produce a PyMol figure (For users of PyMol)"</li>
+<img src="../figure/consurf5.png" width="500">
+<br><br>
+
+<li>Save "PDB FILE" and "consurf new.py"</li>
+<ul>
+<img src="../figure/consurf6.png" width="500">
+<br><br><br>
+</ol>
+
+<h2>Color-code on PyMOL</h2>
+<ol>
+<li>Open PDB file</li>
+<li>Run → consurf_new.py</li>
+<li>Show → surface</li>
+<img src="../figure/consurf7.png" width="500"><br>
+<div align="center">
+<img src="../figure/consurf8.png"><br>
+Flexible ←--------------------------------------→ Conserved
+</div>
+</ol>
+<!--コンテンツ ここまで -->
+
+</div><!-- / contents end -->
+
+<div id="sidebar">
+<!-- サイドバー ここから -->
+<p class="sidetitle">PyMOL</p>
+<ul class="localnavi">
+  <li><a href="install.html">Installation</a></li>
+  <li><a href="hydrophobicity.html">Hydrophobicity</a></li>
+  <li><a href="potential.html">Electrostatic potential</a></li>
+  <li><a href="consurf.html">Conservation</a></li>
+  <li><a href="interface.html">Interaction interface</a></li>
+  <li><a href="hydrogenbond.html">Hydrogen bond</a></li>
+</ul>
+
+<div align="center"><a href="../mail.html"><img src="../figure/mail.png" border="0"></a></div>
+<br>
+
+
+<ul style="list-style:none;">
+<li><!-- Twitter -->
+<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</li>
+
+<li><!-- facebook いいね -->
+<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.protein.osaka-u.ac.jp%2Frcsfp%2Fsupracryst%2Fsuzuki%2Fjpxtal%2FKatsutani%2F&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe>
+</li>
+
+<li><!-- Google +1 -->
+<div class="g-plusone" data-size="medium" data-annotation="inline" data-width="300"></div>
+
+<script type="text/javascript">
+  window.___gcfg = {lang: 'ja'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = '../../../../../../../apis.google.com/js/platform.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+</li>
+
+<li><!-- はてなブックマーク -->
+<a href="http://b.hatena.ne.jp/entry/http://www.protein.osaka-u.ac.jp/rcsfp/supracryst/suzuki/jpxtal/Katsutani/" class="hatena-bookmark-button" data-hatena-bookmark-title="Windowsで行こう" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="../../../../../../../b.st-hatena.com/images/entry-button/button-only%402x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="../../../../../../../b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+</li>
+</ul><!-- サイドバー ここまで -->
+</div><!-- / sidebar end -->
+<div id="footer">
+<div align="right">
+<a href="#header"><img src="../figure/page_top.gif"></a>
+</div><br>
+
+<div Align="center">
+| <a href="index.html">Home</a> | <a href="../index-2.html" target="_blank">Japanese</a> |
+</div>
+
+<p id="page-top"><a href="#header">PAGE TOP</a></p>
+</div><!-- / footer end -->
+</div><!-- / wrapper end -->
+</body>
+
+<!-- Mirrored from www.protein.osaka-u.ac.jp/rcsfp/supracryst/suzuki/jpxtal/Katsutani/en/consurf.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 May 2019 12:31:55 GMT -->
+</html>

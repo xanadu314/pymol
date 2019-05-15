@@ -1,0 +1,29 @@
+###basic settings###
+viewport 1920,1080
+
+###create images###
+ray angle=8.25 
+png stereo01.png 
+ray angle=6.75 
+png stereo02.png 
+ray angle=5.25 
+png stereo03.png 
+ray angle=3.75 
+png stereo04.png 
+ray angle=2.25
+png stereo05.png 
+ray angle=0.75  
+png stereo06.png 
+ray angle=-0.75 
+png stereo07.png 
+ray angle=-2.25 
+png stereo08.png 
+ray angle=-3.75 
+png stereo09.png 
+ray angle=-5.25 
+png stereo10.png 
+ray angle=-6.75 
+png stereo11.png 
+ray angle=-8.25 
+png stereo12.png 
+

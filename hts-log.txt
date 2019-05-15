@@ -1,0 +1,27 @@
+HTTrack3.48-21+htsswf+htsjava launched on Wed, 15 May 2019 19:54:31 at http://www.protein.osaka-u.ac.jp/rcsfp/supracryst/suzuki/jpxtal/Katsutani/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "zh, en, *" http://www.protein.osaka-u.ac.jp/rcsfp/supracryst/suzuki/jpxtal/Katsutani/ -O1 "C:\My Websites\http___www.protein.osaka-u.ac.jp_rcsfp_supracryst_suzuki_jpxtal_Katsutani_" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+19:54:31	Warning: 	Note: due to www.protein.osaka-u.ac.jp remote robots.txt rules, links beginning with these path will be forbidden: /computer/ (see in the options to disable this)
+20:31:16	Warning: 	Retry after error -4 (Connect Error) at link https://apis.google.com/js/platform.js (from www.protein.osaka-u.ac.jp/rcsfp/supracryst/suzuki/jpxtal/Katsutani/)
+20:31:16	Error: 	"Not Found" (404) at link www.protein.osaka-u.ac.jp/rcsfp/supracryst/suzuki/jpxtal/Katsutani/v_separator.gif (from www.protein.osaka-u.ac.jp/rcsfp/supracryst/suzuki/jpxtal/Katsutani/base.css)
+20:31:16	Error: 	"Not Found" (404) at link www.protein.osaka-u.ac.jp/rcsfp/supracryst/suzuki/jpxtal/Katsutani/square.gif (from www.protein.osaka-u.ac.jp/rcsfp/supracryst/suzuki/jpxtal/Katsutani/base.css)
+20:31:16	Error: 	"Not Found" (404) at link www.protein.osaka-u.ac.jp/rcsfp/supracryst/suzuki/jpxtal/Katsutani/figure/potential4.png (from www.protein.osaka-u.ac.jp/rcsfp/supracryst/suzuki/jpxtal/Katsutani/potential.php)
+20:31:16	Error: 	"Not Found" (404) at link www.protein.osaka-u.ac.jp/rcsfp/supracryst/suzuki/jpxtal/Katsutani/consurf.html (from www.protein.osaka-u.ac.jp/rcsfp/supracryst/suzuki/jpxtal/Katsutani/consurf2.php)
+20:31:56	Warning: 	Retry after error -4 (Connect Error) at link https://apis.google.com/js/platform.js (from www.protein.osaka-u.ac.jp/rcsfp/supracryst/suzuki/jpxtal/Katsutani/)
+20:31:56	Error: 	"Not Found" (404) at link www.protein.osaka-u.ac.jp/rcsfp/supracryst/suzuki/jpxtal/Katsutani/css/controller.png (from www.protein.osaka-u.ac.jp/rcsfp/supracryst/suzuki/jpxtal/Katsutani/css/slideshow.css)
+20:31:56	Error: 	"Not Found" (404) at link www.protein.osaka-u.ac.jp/rcsfp/supracryst/suzuki/jpxtal/Katsutani/css/controller-controls.png (from www.protein.osaka-u.ac.jp/rcsfp/supracryst/suzuki/jpxtal/Katsutani/css/slideshow.css)
+20:31:56	Error: 	"Not Found" (404) at link www.protein.osaka-u.ac.jp/rcsfp/supracryst/suzuki/jpxtal/Katsutani/css/loader.png (from www.protein.osaka-u.ac.jp/rcsfp/supracryst/suzuki/jpxtal/Katsutani/css/slideshow.css)
+20:31:56	Error: 	"Not Found" (404) at link www.protein.osaka-u.ac.jp/rcsfp/supracryst/suzuki/jpxtal/Katsutani/en/figure/v_line1.gif (from www.protein.osaka-u.ac.jp/rcsfp/supracryst/suzuki/jpxtal/Katsutani/en/base.css)
+20:31:56	Error: 	"Not Found" (404) at link www.protein.osaka-u.ac.jp/rcsfp/supracryst/suzuki/jpxtal/Katsutani/en/v_separator.gif (from www.protein.osaka-u.ac.jp/rcsfp/supracryst/suzuki/jpxtal/Katsutani/en/base.css)
+20:31:56	Error: 	"Not Found" (404) at link www.protein.osaka-u.ac.jp/rcsfp/supracryst/suzuki/jpxtal/Katsutani/en/figure/v_line2.gif (from www.protein.osaka-u.ac.jp/rcsfp/supracryst/suzuki/jpxtal/Katsutani/en/base.css)
+20:31:56	Error: 	"Not Found" (404) at link www.protein.osaka-u.ac.jp/rcsfp/supracryst/suzuki/jpxtal/Katsutani/en/figure/triangle7.gif (from www.protein.osaka-u.ac.jp/rcsfp/supracryst/suzuki/jpxtal/Katsutani/en/base.css)
+20:31:56	Error: 	"Not Found" (404) at link www.protein.osaka-u.ac.jp/rcsfp/supracryst/suzuki/jpxtal/Katsutani/en/square.gif (from www.protein.osaka-u.ac.jp/rcsfp/supracryst/suzuki/jpxtal/Katsutani/en/base.css)
+20:32:17	Error: 	"Connect Error" (-4) after 2 retries at link https://apis.google.com/js/platform.js (from www.protein.osaka-u.ac.jp/rcsfp/supracryst/suzuki/jpxtal/Katsutani/)
+
+HTTrack Website Copier/3.48-21 mirror complete in 37 minutes 46 seconds : 418 links scanned, 402 files written (53893508 bytes overall) [54136637 bytes received at 23890 bytes/sec], 34753 bytes transferred using HTTP compression in 1 files, ratio 30%
+(13 errors, 3 warnings, 0 messages)
